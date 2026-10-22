@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svierosion"
+version = "0.1.0"
+description = "Erosion of triangulated solids by spherical-volume-invariant (SVI) and curvature flows, via the level set method"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-image>=0.21",
+    "torch>=2.2",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+render = ["vtk>=9.2"]
+
+[project.scripts]
+svierosion = "svierosion.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["svierosion*"]

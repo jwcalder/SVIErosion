@@ -1,0 +1,11 @@
+\begin{tabular}{llccc}
+\toprule
+mesh & grid & $\max|\phi-d|/h$ & sign errors & time [s] \\
+\midrule
+cube (12 tri) & 35x35x35 & $3.5\cdot 10^{-7}$ & 0 & 0.35 \\
+cube (12 tri) & 81x81x81 & $4.9\cdot 10^{-7}$ & 0 & 0.06 \\
+cube (12 tri) & 162x162x162 & $4.9\cdot 10^{-7}$ & 0 & 0.16 \\
+torus (36864 tri), 20k band nodes & 108x108x48 & $9.9\cdot 10^{-6}$ & -- & 0.14 \\
+torus (36864 tri), 20k band nodes & 216x216x96 & $2.1\cdot 10^{-5}$ & -- & 0.39 \\
+\bottomrule
+\end{tabular}

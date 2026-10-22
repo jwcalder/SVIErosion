@@ -1,0 +1,16 @@
+# Private files: never commit (note: gitignore does not understand a leading "./")
+/SVI_Flow_Erosion.pdf
+/instructions.txt
+
+# Generated outputs
+examples/output/
+benchmarks/output/
+__pycache__/
+*.egg-info/
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fdb_latexmk
+report/*.fls
+report/*.synctex.gz
